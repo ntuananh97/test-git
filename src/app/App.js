@@ -33,7 +33,7 @@ function App() {
           <div className="row">
             <div className="main-left col-12 col-lg-9">
               <div className="cate-movie">
-                <div className="cate-movie__heading flex-a-c">
+                <div className="cate-movie__heading flex">
                   <h2 className="tab-movie active">Phim bộ mới cập nhật</h2>
                   <h2 className="tab-movie">
                     Phim lẻ mới cập nhật
@@ -44,10 +44,10 @@ function App() {
                 </div>
 
                 <div className="cate-movie__main">
-                  <div className="row">
+                  <div className="row gx-5 row-grid">
                     {[...Array(5)].map((x, i) => (
-                      <div className="col-12 col-lg-3" key={i}>
-                        <a href="/" className="movie-box" >
+                      <div className="col-12 col-lg-3 col-grid" key={i}>
+                        <a href="/" className="movie-box movie-special" >
                           <div className="movie-box__img">
                             <img
                               src={movieImage}
@@ -57,7 +57,38 @@ function App() {
                           </div>
 
                           <div className="movie-sub">Tập 11 vietsub</div>
-                          <h2 className="movie-box-title">One Piece</h2>
+                          <h2 className="movie-box-title">
+                            <a href="/">One Piece</a>
+                          </h2>
+                          <i className="icon-play"></i>
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="cate-movie cate-movie__hot">
+                <div className="cate-movie__heading flex">
+                  <h2 className="tab-movie active">Được yêu thích</h2>
+                </div>
+
+                <div className="cate-movie__main">
+                  <div className="row gx-5 row-grid">
+                    {[...Array(5)].map((x, i) => (
+                      <div className="col-12 col-lg-3 col-grid" key={i}>
+                        <a href="/" className="movie-box movie-special" >
+                          <div className="movie-box__img">
+                            <img
+                              src={movieImage}
+                              alt="movie"
+                              className="img-objc"
+                            />
+                          </div>
+
+                          <div className="movie-sub">Tập 11 vietsub</div>
+                          <h2 className="movie-box-title">
+                            <a href="/">One Piece</a>
+                          </h2>
                           <i className="icon-play"></i>
                         </a>
                       </div>
