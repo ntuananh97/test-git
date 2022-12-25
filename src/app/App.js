@@ -7,6 +7,7 @@ import Footer from "./componentWeb/Footer";
 import Header from "./componentWeb/Header";
 
 function App() {
+  const test = 1;
   return (
     <div>
       <Header />
