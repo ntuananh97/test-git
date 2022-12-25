@@ -8,6 +8,7 @@ import Header from "./componentWeb/Header";
 
 function App() {
   const test = 1;
+  console.log("test")
   return (
     <div>
       <Header />
