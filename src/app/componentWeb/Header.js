@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/images/logo.png";
 
 const Header = () => {
+  // Test update các thứ
   return (
     <div className="header">
       <div className="container">
